@@ -1,0 +1,70 @@
+{
+  "id": "animeav1-improved",
+  "name": "AnimeAV1 Improved",
+  "version": "2.4.0",
+  "apiVersion": 7,
+  "author": "LifReizei",
+  "description": "Anime en español latino (y subtitulado si no hay) desde animeav1.com, con catálogo en Inicio y Categorías. Prueba Voe, UPNShare, MP4Upload, YourUpload y StreamTape hasta encontrar uno que reproduzca.",
+  "langs": ["es"],
+  "nsfw": false,
+  "entry": "plugin.js",
+  "color": "#8E6BFF",
+  "section": {
+    "label": "AnimeAV1 Improved"
+  },
+  "categories": ["anime"],
+  "hosts": [
+    "animeav1.com",
+    "cdn.animeav1.com",
+    "voe.sx",
+    "*.voe.sx",
+    "jeremyparticipantanything.com",
+    "teresapoliticallearn.com",
+    "mp4upload.com",
+    "*.mp4upload.com",
+    "yourupload.com",
+    "*.yourupload.com",
+    "vidcache.net",
+    "*.vidcache.net",
+    "streamtape.com",
+    "tapecontent.net",
+    "*.tapecontent.net",
+    "*.uns.bio"
+  ],
+  "streamHosts": "any",
+  "capabilities": [
+    "home",
+    "browse",
+    "search",
+    "episodes",
+    "resolve"
+  ],
+  "settings": [
+    {
+      "key": "idioma",
+      "label": "Idioma",
+      "type": "select",
+      "default": "sub",
+      "options": [
+        { "value": "sub", "label": "Solo subtitulado" },
+        { "value": "dub", "label": "Solo latino" },
+        { "value": "dub-sub", "label": "Latino, o subtitulado si no hay" }
+      ]
+    },
+    {
+      "key": "servidor",
+      "label": "Servidor preferido",
+      "type": "select",
+      "default": "auto",
+      "options": [
+        { "value": "auto", "label": "Automático (recomendado)" },
+        { "value": "voe", "label": "Tv - 720p" },
+        { "value": "upnshare", "label": "Tv - 1080p" },
+        { "value": "yourupload", "label": "Standard 1" },
+        { "value": "streamtape", "label": "Standard 2" },
+        { "value": "mp4upload", "label": "Celular/Tv" }
+      ]
+    }
+  ],
+  "icon": "icon.png"
+}
